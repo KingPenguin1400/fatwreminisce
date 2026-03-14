@@ -11,11 +11,13 @@
     <button type="button" onClick="click()">Reminisce</button>
     <p id="clicks">Clicks: 0</p>
     <script type="text/javascript">
-    let clicks = 0;
-    const click = function() {
+      let clicks = 0;
+      const clickstextinnerhtml = document.getElementById("clicks").innerHTML;
+      const click = function() {
         clicks += 1;
-        document.getElementById("clicks").innerHTML = `Clicks: ${clicks}`;
-    };
+        clickstextinnerhtml = `Clicks: ${clicks}`;
+        console.log(clickstextinnerhtml);
+      };
     </script>
 </body>
 </html>

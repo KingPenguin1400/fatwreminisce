@@ -8,6 +8,8 @@
     </style>
 </head>
 <body>
+    <button type="button" onClick="click()">Reminisce</button>
+    <p>Clicks: <a id="clicks">0</a></p>
     <script type="text/javascript">
     int clicks = 0;
     function click() {
@@ -15,7 +17,5 @@
         document.getElementById("clicks").innerHTML = clicks;
     };
     </script>
-    <button type="button" onClick="click()">Reminisce</button>
-    <p>Clicks: <a id="clicks">0</a></p>
 </body>
 </html>
